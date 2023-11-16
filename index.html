@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Personal - Start Bootstrap Theme</title>
+        <title>Carlos Reis - Portifólio</title>
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Custom Google font-->
@@ -16,18 +16,50 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+
+        <style>
+            .animate-up:hover {
+                animation: move-up 1s ease-in-out forwards;
+            }
+        
+            .animate-down {
+                animation: move-down 1s ease-in-out forwards;
+            }
+        
+            @keyframes move-up {
+                0% {
+                    transform: translateY(0);
+                }
+        
+                100% {
+                    width: 90px;
+                    height: 90px;
+                }
+            }
+        
+            @keyframes move-down {
+                0% {
+                    width: 90px;
+                    height: 90px;
+                }
+                100% {
+                    width: 60px;
+                    height: 60px;
+                }
+            }
+        </style>
     </head>
     <body class="d-flex flex-column h-100">
-        <main class="flex-shrink-0">
+        <main class="flex-shrink-0" id="home">
             <!-- Navigation-->
-            <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
+            <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-white py-3">
                 <div class="container px-5">
                     <a class="navbar-brand" href="index.html"><span class="fw-bolder text-primary text-gradient d-inline">C. Reis</span></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
-                            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">Sobre</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
                             <li class="nav-item"><a class="nav-link" href="#">Experiências</a></li>
                             <li class="nav-item"><a class="nav-link" href="#">Projetos</a></li>
                             <li class="nav-item"><a class="nav-link" href="#">Contato</a></li>
@@ -184,6 +216,94 @@
                 </div>
             </header>             
         </main>
+
+        <!-- About Section-->
+        <section class="bg-light py-5" id="sobre">
+            <div class="container px-5">
+                <div class="row gx-5 justify-content-center">
+                    <div class="">
+                        <div class="my-5">
+                            <h2 class="display-5 fw-bolder"><span class="text-gradient d-inline">Sobre mim</span></h2>
+                            <p class="lead mb-4"><span class="badge bg-primary">Hello World!!</span> Meu nome é <strong>Carlos</strong> e posso te ajudar a transformar ideias em software.</p>
+                          
+                            <div style="text-align: justify;">
+                                <p class="text-muted">
+                                    Olá, meu nome é <strong>Carlos Reis</strong> e sou um <strong>desenvolvedor de software</strong> apaixonado por música e tecnologia. Atualmente estou em busca
+                                    de novos desafios e oportunidades de crescimento profissional como <strong>Desenvolvedor Backend Java</strong> ou <strong>Desenvolvedor FullStack</strong> 
+                                    utilizando Angular no frontend. Meu objetivo é contribuir em projetos desafiadores que me permitam aplicar minhas habilidades, aprender novas tecnologias e 
+                                    skills, e agregar valor ao meu desenvolvimento profissional. Também estou aberto a projetos freelancer.
+                                </p>
+
+                                <p class="text-muted">
+                                    Como desenvolvedor backend, tenho experiência acadêmica e de projetos pessoais na criação de <strong>aplicações web e APIs REST</strong> utilizando os projetos
+                                    do ecossistema Spring, como, <strong>Spring Framework, Spring Boot, Spring Data JPA e Spring Security</strong>. Geração de relatórios através do <strong>
+                                    Jaspersoft Studio.</strong>Utilização dos banco de dados <strong>MySQL</strong>e <strong>SQL Server</strong> para armazenamento de dados e criação de relatórios
+                                    (com querys SQL).No desenvolvimento frontent, utilizo <strong>HTML 5, CSS 3 e Typescript</strong> junto com o framework <strong>Angular</strong> e outras 
+                                    ferramentas que me possibilitem uma maior agilidade na criação de interfaces intuitivas e responsivas, como, <strong>PO UI</strong>, <strong>PrimeNG</strong> e 
+                                    <strong>Bootstrap</strong>.
+                                </p>
+
+                                <p class="text-muted">
+                                    Estou sempre buscando aprender algo novo e que possa somar com as minhas habilidades no desenvolvimento de software. Acredito que o 
+                                    aprendizado contínuo e sob demanda é fundamental para o meu crescimento profissional e pessoal. Meu foco principal é o desenvolvimento de 
+                                    aplicações web, e estou sempre procurando maneiras de melhorar minhas habilidades e conhecimentos, afim de de criar aplicações escalaveis, 
+                                    de código limpo e de fácil manutenção. Como um desenvolvedor fullstack, sou capaz de criar aplicativos web incríveis do zero, desde a interface
+                                    do usuário até a lógica do lado do servidor e a integração com banco de dados.
+                                </p>
+    
+                                <p class="text-muted">
+                                    Atualmente estou trabalhando em um projeto pessoal, que é basicamente um sistema para gerenciamento de chamados técnicos <a href="https://github.com/CarlosEReis/er7_assistencia-tecnica"
+                                    target="_blank" >SGCT</a> 
+                                    onde estou desenvolvendo o frontend (SPA) e backend (API REST). E Também estou cursando <a href="https://mergulhospring.com.br/esr-conteudo/" target="_blank">
+                                    "Especialista Spring REST"</a> pela <a href="https://www.algaworks.com/" target="_blank">AlgaWorks.</a>
+                                </p>
+                            </div>
+
+                            <h3  align="center" class="text-gradient pt-4 mb-0" style="line-height: 3.4rem;">Linguagens, frameworks, bancos e outros.</h3>
+                            <p align="center" class="text-muted pb-4">Veja algumas das tecnologias no qual eu utilizo e já utilizei.</p>
+                            <p align="center" >
+                                <a class="me-3" href="https://developer.mozilla.org/pt-BR/docs/Web/HTML" target="_blank"><img class="animate-up animate-down" title="HTML5" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="html5" width="60" height="60"/></a>&nbsp
+                                <a class="me-3" href="https://developer.mozilla.org/pt-BR/docs/Web/CSS"><img class="animate-up animate-down" title="CSS3" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="css3" width="60" height="60"/></a>&nbsp
+                                <a class="me-3" href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript" target="_blank"><img class="animate-up animate-down" title="Javascript" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="javascript" width="60" height="60"/></a>&nbsp
+                                <a class="me-3" href="https://www.typescriptlang.org/" target="_blank"><img class="animate-up animate-down" title="Typescript" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="typescript" width="60" height="60"/></a>&nbsp
+                                <a class="me-3" href="https://po-ui.io/" target="_blank"><img class="animate-up animate-down" title="PO-UI" src="https://po-ui.io/assets/po-logos/po_color_bg.svg" alt="PO-UI" width="60" height="60"/></a>&nbsp
+                                <a class="me-3" href="https://angular.io/" target="_blank"><img class="animate-up animate-down" title="Angular" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg" alt="angular" width="60" height="60"/></a>&nbsp
+                                <a class="me-3" href="https://primeng.org/" target="_blank"><img class="animate-up animate-down" title="PrimeNG" src="https://www.primefaces.org/store/javax.faces.resource/store/image/primeng.svg.xhtml" alt="PrimeNG" width="60" height="60"/></a>&nbsp
+                                <a class="me-3" href="https://getbootstrap.com/" target="_blank"><img class="animate-up animate-down" title="Bootstrap" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="bootstrap" width="60" height="60"/></a>&nbsp
+                                <a class="me-3" href="https://www.selenium.dev/" target="_blank"><img class="animate-up animate-down" title="Selenium" src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Selenium_Logo.png" alt="selenium" width="60" height="60" color="blue"/></a>&nbsp
+                            </p>
+                            
+                            <p align="center" >
+                                <a class="me-3" href="https://oauth.net/2/" target="_blank"><img class="animate-up animate-down" title="OAuth2" src="https://oauth.net/images/oauth-logo-square.png" alt="OAuth2" width="60" height="60"/></a>&nbsp
+                                <a class="me-3" href="http://jwt.io" target="_blank"><img class="animate-up animate-down" title="JWT" src="http://jwt.io/img/icon.svg" alt="JWT" width="60" height="60"/></a>&nbsp
+                                <a class="me-3" href="https://aws.amazon.com/pt/s3/" target="_blank"><img class="animate-up animate-down" title="Amazon S3" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Amazon-S3-Logo.svg/428px-Amazon-S3-Logo.svg.png" alt="Amazon S3" width="60" height="60"/></a>&nbsp
+                                <a class="me-3" href="https://www.java.com/pt-BR/" target="_blank"><img class="animate-up animate-down" title="Java" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="java" width="60" height="60"/></a>&nbsp
+                                <a class="me-3" href="https://maven.apache.org/" target="_blank"><img class="animate-up animate-down" title="Maven" src="https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_maven_icon_130397.png" alt="Maven" width="60" height="60"/></a>&nbsp
+                                <a class="me-3" href="https://www.microsoft.com/pt-br/sql-server/sql-server-2022" target="_blank"><img class="animate-up animate-down" title="SQL Serve" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/microsoftsqlserver/microsoftsqlserver-plain.svg" alt="sqlserver" width="60" height="60"/></a>&nbsp
+                                <a class="me-3" href="https://www.mysql.com/" target="_blank"><img class="animate-up animate-down" title="MySQL" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="mysql" width="60" height="60"/></a>&nbsp
+                                <a class="me-3" href="https://spring.io/" target="_blank"><img class="animate-up animate-down" title="Spring" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" alt="spring" width="60" height="60"/></a>&nbsp
+                                <a class="me-3" href="https://postman.com" target="_blank"><img class="animate-up animate-down" src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" alt="postman" width="60" height="60" /></a>&nbsp
+                                <a class="me-3" href="https://community.jaspersoft.com/" target="_blank"><img class="animate-up animate-down" title="Jaspersoft Studio" src="https://images.sftcdn.net/images/t_app-icon-s/p/e6d790bb-aa65-4fab-aa1e-346af12710a0/1081729734/jaspersoft-studio-imgingest-4237344852768170016.png" alt="Jaspersoft Studio" width="60" height="60"/></a>&nbsp &nbsp
+                            </p>
+                            
+                            <p align="center">
+                                <a class="me-3" href="https://www.docker.com/" target="_blank"><img class="animate-up animate-down" title="Docker" src="https://www.svgrepo.com/show/353659/docker-icon.svg" alt="Docker" width="60" height="60"/></a>&nbsp
+                                <a class="me-3" href="https://git-scm.com/" target="_blank"><img class="animate-up animate-down" title="Git" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="git" width="60" height="60"/></a>&nbsp
+                                <a class="me-3" href="https://github.com/" target="_blank"><img class="animate-up animate-down" title="GitHub" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="github" width="60" height="60"/></a>&nbsp
+                                <a class="me-3" href="https://www.heroku.com/" target="_blank"><img class="animate-up animate-down" title="Heroku" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/heroku/heroku-plain.svg" alt="heroku" width="60" height="60"/></a>&nbsp
+                                <a class="me-3" href="https://code.visualstudio.com/" target="_blank"><img class="animate-up animate-down" title="VS Code" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="vscode" width="60" height="60"/></a>&nbsp
+                                <a class="me-3" href="https://br.wordpress.org/" target="_blank"><img class="animate-up animate-down" title="WordPress" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-plain.svg" alt="wordpress" width="60" height="60"/></a>&nbsp
+                                <a class="me-3" href="https://filezilla-project.org/" target="_blank"><img class="animate-up animate-down" title="FileZilla" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/filezilla/filezilla-plain.svg" alt="filezilla" width="60" height="60"/></a>&nbsp
+                                <a class="me-3" href="https://woocommerce.com/" target="_blank"><img class="animate-up animate-down" title="WooCommerce" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/woocommerce/woocommerce-original.svg" alt="woocommerce" width="60" height="60"/></a>&nbsp
+                                <a class="me-3" href="https://ubuntu.com/" target="_blank"><img class="animate-up animate-down" title="Ubuntu" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ubuntu/ubuntu-plain.svg" alt="ubuntu" width="60" height="60"/></a>&nbsp
+                                <a class="me-3" href="https://www.microsoft.com/pt-br/software-download/ target="_blank"><img class="animate-up animate-down" title="Windows" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/windows8/windows8-original.svg" alt="windows" width="60" height="60"/></a>&nbsp
+                            </p>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <!-- Footer-->
         <footer class="bg-white py-4 mt-auto">
