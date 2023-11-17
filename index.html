@@ -18,6 +18,10 @@
         <link href="css/styles.css" rel="stylesheet" />
 
         <style>
+            li {
+                padding-bottom: .5rem;
+            }
+
             .animate-up:hover {
                 animation: move-up 1s ease-in-out forwards;
             }
@@ -25,7 +29,35 @@
             .animate-down {
                 animation: move-down 1s ease-in-out forwards;
             }
+            
+            #logistica::before{
+                z-index: -1;
+                content: "🚀";
+                position: absolute;
+                top: 16px;
+                --left: -40px;
+                width: 16px;
+                height: 16px;
+                font-size: 30px;
+                line-height: 30px;
+                transform: rotate(222deg);
+                animation: foguete 15s linear;
+                animation-delay: 5s;
+                animation-iteration-count: infinite;
+                animation-direction: alternate;
+            }
         
+            @keyframes foguete {
+                0% { transform:  translateX(0px) translateY(0px) rotate(222deg); z-index: -1;}
+                10% { transform: translateX(-65px) translateY(0px) rotate(222deg); z-index: 1}
+                15% { transform: translateX(-65px) translateY(0px) rotate(315deg); }
+                20% { transform: translateX(-65px)  translateY(0px) rotate(315deg); }
+                30% { transform: translateX(-65px)  translateY(-50px) rotate(315deg); }
+                40% { transform: translateX(-65px)  translateY(-100px) rotate(315deg); }
+                50% { transform: translateX(-65px)  translateY(-150px) rotate(315deg); font-size: 30px; }
+                100% {transform: translateX(750px)  translateY(-1100px) rotate(365deg ); font-size: 100px; }
+            }
+
             @keyframes move-up {
                 0% {
                     transform: translateY(0);
@@ -47,6 +79,8 @@
                     height: 60px;
                 }
             }
+
+            
         </style>
     </head>
     <body class="d-flex flex-column h-100">
@@ -60,7 +94,7 @@
                         <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
                             <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
                             <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">Experiências</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#experiencia">Experiências</a></li>
                             <li class="nav-item"><a class="nav-link" href="#">Projetos</a></li>
                             <li class="nav-item"><a class="nav-link" href="#">Contato</a></li>
                         </ul>
@@ -68,7 +102,7 @@
                 </div>
             </nav>
             <!-- Header-->
-            <header class="py-5">
+            <header class="py-5 mt-3">
                 <div class="container px-5 pb-5">
                     <div class="row gx-5 align-items-center">
                         <div class="col-xxl-5">
@@ -217,7 +251,7 @@
             </header>             
         </main>
 
-        <!-- About Section-->
+        <!-- Sessão sobre-->
         <section class="bg-light py-5" id="sobre">
             <div class="container px-5">
                 <div class="row gx-5 justify-content-center">
@@ -305,10 +339,81 @@
             </div>
         </section>
 
+        <!-- Experiências-->
+        <section class="bg-light py-5" id="experiencia">
+            <div class="container px-5">
+                <div class="row gx-5 justify-content-center">
+                    <div class="">
+                        <div class="my-5">
+                            <h2 class="display-5 fw-bolder"><span class="text-gradient d-inline">Experiências</span></h2>
+                            <p class="lead mb-4">Veja abaixo algumas das minha últimas experiências relevantes.</p>
+ 
+
+                            <div >
+                                <div class="mb-3">
+                                    <h3 class="fs-4 fw-semibold" style="color: #2b2fec;">Hanna Instruments Brasil</h3>
+                                    <p class="m-0">⌛️ Tempo integral · 4 a 1 m</p>
+                                    <p class="m-0 text-muted">📍<em> Barueri, São Paulo, Brasil · Presencial </em></p>
+                                </div>
+
+                                <div class="resume-item ps-4 pb-5 border-2 border-start border-primary">
+                                  <h4 class="fs-6 fw-semibold badge bg-gradient-primary-to-secondary">Desenvolvedor de Software Júnior</h4>
+                                  <h5 class="fs-6 text-muted mb-3">🗓 fev de 2020 - nov de 2022 · 2 anos 10 meses</h5>
+                                  <ul class="mb-0 text-muted">
+                                    <li>Colaboração ativa junto a agência, na implantação do <strong>E-commerce</strong>.</li>
+                                    <li>Realização de configurações no E-commerce a nível de administrador, incluindo correção de bugs, alteração e criação de novas páginas e banners através de forma programatica.</li>
+                                    <li>Participação na integração de consumo de estoque entre o E-commerce e o <strong>ERP Protheus</strong> da Totvs, incluindo o desenvolvimento de código-fonte em <strong>PHP</strong> no lado E-commerce e colaboração na criação da <strong>API</strong> no lado ERP.</li>
+                                    <li>Prestação de suporte de nível 1 ao ERP e <strong>CRM</strong>, incluindo reporte de incidentes, identificação de bugs e melhorias, criação e gestão de usuários, controle de módulos e funcionalidades.</li>
+                                    <li>Criação de pequenas APIs no ERP utilizando a linguagem <strong>ADVPL</strong> e realização de correções e customizações pontuais com <strong>HTML, CSS e JavaScript</strong> no CRM.</li>
+                                    <li><strong>Geração de relatórios</strong> sob demanda através do banco de dados usando <strong>consultas SQL</strong> para campanhas de marketing, direcionamento de vendas e análises gerenciais.</li>
+                                    <li>Atuação como Helpdesk prestando suporte de nível 1, resolvendo problemas de software, CPD, hardware, redes (incluindo criação e gestão de usuários no Active Directory), impressoras e ramais telefônicos.</li>                                  
+                                  </ul>
+                                </div>
+
+                                <div class="resume-item ps-4 border-2 border-start border-primary" id="logistica" style="position: relative;" style="z-index: 2;">
+                                  <h4 class="fs-6 fw-semibold badge bg-gradient-primary-to-secondary" style="z-index: 2;">Auxiliar de logística</h4>
+                                  <h5 class="fs-6 text-muted mb-3">🗓 nov de 2018 - jan de 2020 · 1 ano 3 meses</h5>
+                                  <p class="text-muted">Como Auxiliar de Logística, atuei tanto na parte administrativa quando operacional, desde o recebimento dos produtos até a expedição dos pedidos:</p>
+                                  <ul class="text-muted">
+                                    <li>Conferência  de nota de importação, endereçamento dos produto em estoque. Picking e packing, expedição de pedidos, cotações de frete, agendamento de coletas, contato constante com a area comercial para tratativas de demandas urgentes.</li>
+                                    <li>Também pude contribuir em algumas frentes ajudando na melhoria de alguns processos internos da empresa, tais como: 
+                                        <ul class="list-unstyled ps-4">
+                                            <li class="pt-2">📌&nbsp Fui resposável por <strong>reduzir</strong> o tempo de invetário em quase <strong>50%</strong>.</li>
+                                            <li >📌&nbsp Também <strong>reduzi</strong> o tempo na conferência dos produtos de importação e ajudei na otimização do processo de conferência, apontando os produtos com backlog de pedido, no ato da conferência.</li>
+                                            <li >📌&nbsp <strong>Colaborei</strong> na implementação do controle de validade dos produtos em estoque.</li>
+                                        </ul>
+                                    </li>
+                                    <li style="text-align: justify;">
+                                        <span class="badge text-bg-warning">Destaque</span>
+                                        Com o espirito de inovar e observar algumas situações como oportunidades, visualisei junto a equipe a oportunidade de melhoria em um processo dentro da operação logística e utilizei meus conhecimentos em programação e meu tempo livre para criar um sistema do tipo intranet na <strong>linguagem Java</strong>, que ajudou a mitigar erros operacionais e também ajudou a área comercial na divulgação da posição de pedidos para o cliente.
+                                        Esse sistema foi fundamental para que eu pudesse dar o próximo passo na minha carreira dentro da empresa em pouco mais de um ano. O foguete animado a esquerda representa exatamente essa evolução rs.
+                                    </li>
+                                  </ul>
+                                  <p>
+                                    <span class="fs-3">🏆</span>
+                                    <em class="text-muted"> Devido às minhas contribuições para a melhoria dos processos da empresa, recebi o título de <strong>colaborador mais proativo</strong> ao final do primeiro ano.</em>
+                                  </p>
+                                </div>
+                            </div>
+                          
+
+
+
+
+
+
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- Footer-->
         <footer class="bg-white py-4 mt-auto">
             <div class="container px-5">
-                <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+                <div class="row align-items-center justify-content-between flex-column flex-sm-row text-muted">
                     <div class="col-auto"><div class="small m-0">Copyright &copy; Carlos E. Reis. Todos os direitos reservados 2023</div></div>
                     <div class="col-auto">
                         <a class="small" href="#!">Privacy</a>
